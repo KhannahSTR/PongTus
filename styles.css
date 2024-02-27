@@ -1,0 +1,40 @@
+body {
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+canvas {
+    border: 2px solid #FFFFFF;
+}
+
+/* Styling des raquettes */
+#pongCanvas {
+    position: relative;
+}
+
+/* Styling de la raquette du joueur 1 */
+#pongCanvas::before {
+    content: "";
+    position: absolute;
+    background-color: #FFFFFF;
+    width: 10px;
+    height: 100px;
+    left: 0;
+    top: 0;
+}
+
+/* Styling de la raquette du joueur 2 */
+#pongCanvas::after {
+    content: "";
+    position: absolute;
+    background-color: #FFFFFF;
+    width: 10px;
+    height: 100px;
+    right: 0;
+    top: 0;
+}
