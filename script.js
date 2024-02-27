@@ -78,7 +78,7 @@ document.addEventListener("keydown", function (event) {
         paddle2Y -= paddleSpeed;
     } else if (event.key === "ArrowDown" && paddle2Y < canvas.height - paddleHeight) {
         paddle2Y += paddleSpeed;
-    } else if (event.key === "w" && paddle1Y > 0) {
+    } else if (event.key === "z" && paddle1Y > 0) {
         paddle1Y -= paddleSpeed;
     } else if (event.key === "s" && paddle1Y < canvas.height - paddleHeight) {
         paddle1Y += paddleSpeed;
